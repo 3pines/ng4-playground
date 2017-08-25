@@ -27,13 +27,14 @@ export class AppComponent {
 
     constructor(private dataSvc: DataService) {
     }
+    currentState = 'small';
 
     ngOnInit() {
         console.log(this.dataSvc.cars);
         this.someProperty = this.dataSvc.myData();
     }
 
-    currentState: string = 'small';
+    
 
     animateMe() {
         return this.currentState === 'small' ? 'bigger' : 'small';
