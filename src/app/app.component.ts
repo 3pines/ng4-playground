@@ -29,23 +29,21 @@ export class AppComponent {
     }
     currentState = 'small';
 
+    someProperty = '';
+
+    title = 'app';
+    heyVar = 'hey you!';
+
+    angularLogo = './favicon.ico';
+
     ngOnInit() {
         console.log(this.dataSvc.cars);
         this.someProperty = this.dataSvc.myData();
     }
 
-    
-
     animateMe() {
         return this.currentState === 'small' ? 'bigger' : 'small';
     }
-
-    someProperty: string = '';
-
-    title = 'app';
-    heyVar = 'hey you!';
-
-    angularLogo = "./favicon.ico";
 
     myEvent(event) {
         console.log(event);
