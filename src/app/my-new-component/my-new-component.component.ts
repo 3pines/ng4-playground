@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-my-new-component',
   templateUrl: './my-new-component.component.html',
-  //template: `
+  // template: `
   //  <h2>Hey</h2>
   //  <p>my-new-component works</p>
   //  `,
